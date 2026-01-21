@@ -7,7 +7,7 @@ spec:
   selector:
     app: bank-app
   ports:
-    - protocol: TCP
-     port: 80 #Outside world hits port 80
-     targetPort: 5000 # Forward traffic to container port 5000
-  type: LoadBalancer # Ask WAS to give us a real Public IP
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+  type: LoadBalancer

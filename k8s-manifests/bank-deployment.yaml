@@ -21,7 +21,7 @@ spec:
         fsGroup: 2000
       containers:
       - name: bank-app
-        image: REPLACE_WITH_ECR_URL:v1
+        image: 487123916182.dkr.ecr.af-south-1.amazonaws.com/zero-trust-bank
         ports:
         - containerPort: 5000
         resources:

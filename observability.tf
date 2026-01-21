@@ -7,7 +7,8 @@ resource "helm_release" "prometheus_stack" {
 	namespace = "monitoring"
 	create_namespace = true
 	# More time
-	timeout = 900
+	wait = true
+	timeout = 1800
 
 	# Configuration (Save money and resources)
 	# "High Availability" features will be off in this tab even though they would be left on Prodcution

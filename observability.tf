@@ -1,4 +1,5 @@
 # Add the Prometheus Community Repository (Kinda like adding a new appstore to a phone).
+/*
 resource "helm_release" "prometheus_stack" {
 	name = "prometheus-stack"
 	repository = "https://prometheus-community.github.io/helm-charts"
@@ -57,3 +58,4 @@ resource "helm_release" "prometheus_stack" {
 	# Wait for the cluster to be ready
 	depends_on = [module.eks]
 }
+*/

@@ -1,6 +1,6 @@
 # THis creates a private garage for the Docker images
 resource "aws_ecr_repository" "bank_app" {
-	name = "zerp-trust-bank"
+	name = "zero-trust-bank"
 	image_tag_mutability = "MUTABLE"
 
 	# Security: Scan images for viruses on upload

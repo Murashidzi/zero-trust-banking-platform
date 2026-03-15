@@ -86,3 +86,5 @@ To prevent ongoing AWS billing for the NAT Gateway and EKS Control Plane, tear d
 kubectl delete svc bank-loadbalancer
 terraform destroy --auto-approve
 ```
+
+*This project is part of a research and engineering progression. The security architecture demonstrated here (particulary the Zero Trust deployment model and container runtime hardening) forms the production environment context for ongoing research into kernel-level runtime threat detection using eBPF. See: https://github.com/Murashidzi/sentinel-ebpf (in development)*
